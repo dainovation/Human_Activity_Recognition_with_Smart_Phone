@@ -1,0 +1,35 @@
+
+
+The accelerometer (acc) and gyroscope (gyro) with the 3-axial raw signals Body_Acc-XYZ, BodyGyro-XYZ and Total_Acc-XYZ were considered and were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (BodyAcc-XYZ and GravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+The total measurement of the accelerometer were also take as Total_Acc-XYZ, thereafter the mean and the standard deviation for all the readings were calculated as Body_Acc-XYZ-Avg, Body_Acc-XYZ-SD, Body_Gyro-XYZ-Avg, Body_Gyro-XYZ-SD, Total_Acc-XYZ-Avg and Total_Acc-XYZ-SD.
+
+Subject         
+y               
+x_avg   
+x_sd   
+
+body_acc_x_avg  
+body_acc_x_sd
+body_acc_y_avg  
+body_acc_y_sd
+body_acc_z_avg  
+body_acc_z_sd 
+
+body_gyro_x_avg 
+body_gyro_x_sd
+body_gyro_y_avg	
+body_gyro_y_sd 
+body_gyro_z_avg 
+body_gyro_z_sd
+
+total_acc_x_avg 
+total_acc_x_sd
+total_acc_y_avg 
+total_acc_y_sd 
+total_acc_z_avg 
+total_acc_z_sd 
+
+
+Note:
+The data described above was merged into single individual observations(columns) from test data and train data, the Body_Acc-XYZ, Body_Gyro-XYZ and Total_Acc-XYZ has 128 variable from which mean and standard deviation was calculated and extracted to become the final result called "ucrhar_extracted" data frame

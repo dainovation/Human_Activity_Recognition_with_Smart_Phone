@@ -1,3 +1,4 @@
+## README
 ===================================================================================================
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
@@ -84,5 +85,5 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita and Xavier Par
 
 ==================================================================================================
 THIS PROJECT WAS USED AS PART OF TRAINING IN GETTING AND CLEANING DATA COURSE PROJECT ON COUSERA
-Kunle A. A. 2023
+Kunle A. A. 2023.
 ==================================================================================================

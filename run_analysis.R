@@ -6,6 +6,7 @@ library(tidyr)
 ## IMPORT TRAIN DATA
 y_train <- read_table("data/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt", col_names = FALSE)
 col_n
+
 x_train <- read_table("data/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/x_train.txt", col_names = FALSE)
 subject_train <- read_table("data/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/subject_train.txt", col_names = FALSE)
 body_acc_x_train <- read_table("data/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/Inertial Signals/body_acc_x_train.txt", col_names = FALSE)

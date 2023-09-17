@@ -5,8 +5,6 @@ library(tidyr)
 
 ## IMPORT TRAIN DATA
 y_train <- read_table("data/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt", col_names = FALSE)
-col_n
-
 x_train <- read_table("data/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/x_train.txt", col_names = FALSE)
 subject_train <- read_table("data/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/subject_train.txt", col_names = FALSE)
 body_acc_x_train <- read_table("data/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/Inertial Signals/body_acc_x_train.txt", col_names = FALSE)
@@ -41,7 +39,7 @@ y <- rbind(y_train, y_test)
 
 # MERGE SUBJECT
 subject <- rbind(subject_train, subject_test)
-colnam
+
 
 # MERGE BODY ACC
 body_acc_x <- rbind(body_acc_x_train,body_acc_x_test)
@@ -101,6 +99,9 @@ ucr_har$total_acc_z_sd = apply(ucr_har[,1588:1715],1, sd)
 
 # ucr_har_extract <- select(ucr_har[1], y = ucr_har[2], ucr_har[1716:1735])
 ucr_har_extract <- ucr_har %>% select(Subject, y, ends_with("avg") | ends_with("sd"))
+
+# Output for the dataset
+write.table(ucr_har_extract, file = "data/UCR_HAR_Dataset.csv", sep = ",", col.names = TRUE)
 
 
 

@@ -87,3 +87,4 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita and Xavier Par
 THIS PROJECT WAS USED AS PART OF TRAINING IN GETTING AND CLEANING DATA COURSE PROJECT ON COUSERA
 Kunle A. A. 2023.
 ==================================================================================================
+"# Human_Activity_Recognition_with_Smart_Phone" 

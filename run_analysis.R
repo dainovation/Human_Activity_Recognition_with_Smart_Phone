@@ -3,6 +3,10 @@ library(dplyr)
 library(Hmisc)
 library(tidyr)
 
+
+download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip","data/getdata_projectfiles_UCI HAR Dataset")
+unzip(zipfile = "data/getdata_projectfiles_UCI HAR Dataset")
+
 ## IMPORT TRAIN DATA
 y_train <- read_table("data/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt", col_names = FALSE)
 x_train <- read_table("data/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/x_train.txt", col_names = FALSE)
